@@ -1,0 +1,1021 @@
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.fenqile.fenqile,23
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.cts.priv.ctsshim,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.quark.browser,102
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.weather.provider,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.hpbr.bosszhipin,2221
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.carlauncher,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.connectivity.mainline.manufacturer.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.qcolor,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.uwb.resources,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.sankuai.meituan.dispatch.crowdsource,21
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vos.as.vit,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.display.cutout.emulation.corner,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.browser.novel.widget,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.adservices.api,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.healthservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.display.cutout.emulation.double,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.telephony,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.smartmultiwindow,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.dynsystem,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.unionpay.tsmservice,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.fuelsummary,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.healthconnect.controller,475384
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.wuba.zhuanzhuan,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.nps.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.calendar,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.sexy.hub,2518
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.modemmbnmode,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.symmetry,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.scene.launcher.theme,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.media,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.shuhekeji,23
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.tmgp.sgame,3145
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.service.colorservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.setupwizard,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.onetimeinitializer,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.health.connect.backuprestore,475384
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.ext.shared,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,cn.com.chsi.chsiapp,1713
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.systemui.navbar.gestural_wide_back,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.server.qtiwifi,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.virtualmachine.res,475384
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.mobiletools.systemhelper,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.easyshare,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.sabac.hy,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.simcontacts,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vivo3rdalgoservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.abe,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.are,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.epm,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.nps,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.pay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.pem,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.sos,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.sps,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.tam,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vms,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.sohu.inputmethod.sogou,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.wallpapercropper,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.desktopstickers,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.safecenter,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.appfilter,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.nightpearl,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.remoteassistant,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.sankuai.meituan,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.widgetweather,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.hiboard,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.wifi.platform.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.floatingball,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.compass,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.qqmusic,3144
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.sinovatech.unicom.ui,2258
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.documentsui,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.zdanjian.zdanjian,2518
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.externalstorage,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.uimremoteclient,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.lemon.lv,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.musicwidgetmix,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.htmlviewer,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.numbermark,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.gamehelper.pg,1461
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.widget.healthcare,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vos.user.vit,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.companiondevicemanager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,android.overlay.vrro,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.mms.service,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.funtouch.uiengine,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.qms.service.connectionsecurity,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.downloads,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.smartanswer,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.widget.iot,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.dianping.v1,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,me.ele.crowdsource,12
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.ai.gptagent,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.screenagent,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.federatedcompute.services,475384
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vivokaraoke,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.weather,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.baidu.carlife.vivo,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,vendor.qti.hardware.cacert.server,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.pzds.pzds,2120
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.quicinc.voice.activation,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,cmb.pb,3145
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.wifi.common.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.bbkmusic,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,lkuyk.wwnkbu.eoji.pjdym,2158
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.MobileTicket,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.huluxia.gametools,3109
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.telephonyservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,cn.com.omronhealthcare.omronplus.vivo,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.wifi.mainline.manufacturer.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.browser,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.updater,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.ridemodeaudio,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.game.tgp,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.gamecube,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.bbkcalculator,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,vendor.qti.iwlan,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.configupdater,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.fingerprintvit,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.iotserver,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.phonehandoff,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.pushservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.uimremoteserver,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,vendor.qti.data.txpwradmin,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.se.overlay.target,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.baidu.input_vivo,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.polymerization.app.v357,3067
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.confuridialer,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,me.ele,1705
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,android.qvaoverlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.systemui.plugin.globalactions.wallet,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.ar.core,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.safetycenter.resources,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.downloads.ui,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.vending,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.pacprocessor,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.simappdialog,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.filemanager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.networkstack,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.xingin.xhs,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.xiaodai.credit,6
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bankcomm.Bankcomm,11
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,android.overlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.wifi.manufacturer.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.connectivity.resources,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.ironhidegames.android.kingdomrushfrontiers,1443
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.smartremote,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.mm,3145
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.theme.online.livewallpaper,3116
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.display.cutout.emulation.hole,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.display.cutout.emulation.tall,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.visionaid.builtin,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.vendors.bridge.softsim,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.anjuke.android.app,653
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.modulemetadata,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.wifi.mainline.platform.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.certinstaller,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.smartLife,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.carrierconfig,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.smartshot,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.marvin.talkback,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.sdu.didi.psnger,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.wapi.wapicertmanage,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.systemui.navbar.threebutton,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.umetrip.android.msky.app,1455
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.duowan.kiwi,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.smartunlock,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.qualcomm.datastatusnotification,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.wifi.dialog,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,android,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.touchscreen.vtstouchscreencheck,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.contacts,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.wfd.service,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.secime.service,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.livewallpaper.behaviorcity,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.upnpserver,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.livewallpaper.behavioriqoo,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.baidu.searchbox,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.yiyou.ga,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.shizhuang.duapp,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.rongcard.eid,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.snda.lantern.wifilocating,2518
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vhomeguide,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.cloud,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.timerwidget,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.theme,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.egg,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.mms,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.mtp,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.nfc,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.ons,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.stk,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.backupconfirm,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.wuba,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,vendor.qti.qesdk.sysservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.simpleiconthemeres,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.livewallpaper.behavior,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.nfcbaseapp,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,org.codeaurora.ims,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.calendar,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.statementservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.iqoo.feedback,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.BBKClock,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.fileobserver,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,android.overlay.target,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,sanliumanhua.apps.com,2647
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.quickpay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vlife.vivo.wallpaper,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.overlay.gmsconfig.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.aiengine,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.daemonService,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.pasrservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.huaxiaozhu.rider,2126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.ringclip,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.voicewakeup,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.systemui.navbar.gestural_extra_wide_back,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.livewallpaper.box,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.dynamicddsservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.xhey.xcamera,586
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.xrvd.service,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.mobile.cos.iroaming,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qcrilmsgtunnel,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,cn.gov.pbc.dcep,3033
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.settings,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.sharedstoragebackup,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.printspooler,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.globalanimation,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.jym.mall,2337
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.healthcode,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.wifi.resources.overlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.Tips,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.card,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.cota,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.game,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vdfs,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,org.ifaa.aidl.manager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.alphacamera,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qiyiapp.cloud,3001
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.connectivity.common.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.incallui,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.qqlive,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.duokan.phone.remotecontroller,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.se,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.inputdevices,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.photoframewidget,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.rkpdapp,475384
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.cotticoffee.cotticlient,2384
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.bips,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.dpmserviceapp,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.upgadata.up7723,1443
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.xunmeng.pinduoduo,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.ai.copilot,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.wifi.resources.overlay.kalama,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.connbase,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.iqoo.logsystem,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.msxf.ayh,78
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.settings.overlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.launchercopilot,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.video.widget,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.SmartKey,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.fuzzylocationmanager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.ese.widget,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.novatek.novavis,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.basemanager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.wifi.mainline.common.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.facewake,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.cellbroadcastreceiver,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.webview,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.taobao.widgetvivo,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.gpudrivers.kalama.api33,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.faceui,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.yitantech.gaigai,74
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.yueme.itv,1107
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.videoeditor,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.server.telecom,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.cellbroadcastservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.health,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.bbklog,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.permissionmanager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.keychain,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.snapdragon.qdcm_ff,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.hybrid,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.wifi.resources.overlay.target,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.mobile.iroaming,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.camera,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.moodcube,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.launcher2,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.lite.theme,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.renrendai.haohuan,12
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.accessibilityenhance,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.ss.android.ugc.aweme,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.gms,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.gsf,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,android.ext.services,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.wifi.resources,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.phone.overlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.carrierconfig.overlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.calllogbackup,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.systemui.overlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.mobileqq,3145
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.cameraextensions,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.server.telecom.overlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.localtransport,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.faceunlock,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.packageinstaller,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.carrierdefaultapp,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.jiaohua_browser,3000
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.remoteSimlockAuth,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.credentialmanager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.base.player,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.networkstate,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.devicestatisticsservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.theme.font.notoserifsource,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.proxyhandler,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vivoconsole,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.widget.calendar,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.ctrip.jr,22
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.magazine,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.display.cutout.emulation.waterfall,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.intentresolver,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.workloadclassifier,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.widget.vhome,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.VideoPlayer,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.systemui.navbar.transparent,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.livewallpaper.behaviorskylight,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.BBKCrontab,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.citicsf.finance,22
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.livewallpaper.boxres,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.devicereg,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.snda.wifilocating,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.jkchess,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.printservice.recommendation,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.fvcorp.android.aijiasuclient,2093
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.systemuiplugin,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,cn.wsds.gamemaster,1419
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.familycare.local,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.syncadapters.calendar,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.doubletimezoneclock,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.managedprovisioning,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vibrator4d,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.iqoo.secure,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.kwai.videoeditor,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.base.vtouch,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.immomo.momo,2215
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.soundpicker,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vtouch,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.wallet,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.soter.soterserver,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.sim.contacts,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.connectivity.manufacturer.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.xspace,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.google.android.accessibility.switchaccess,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.globalsearch,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.realtech.xiaocan,3033
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.ximalaya.ting.android,2310
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.iqoo.powersaving,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.seservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.connbase.sysui,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.zhihu.android,74
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.cipherchain,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bankcomm.maidanba,11
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.sdkplugin,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.singularity,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.appstore,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.smspush,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.role.notes.enabled,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.atfwd2,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.jd.jrapp,78
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.apps.tag,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.ai.ime.nex,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.pcsuite,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.dragon.read,2935
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.findphone,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.networkimprove,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.accessibility,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.bbk.lockscreen3,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.baidu.map.location,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.audiofx,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.widget.cleanspeed,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,qkxzxcvbxcw.aczsvfq2erg,2518
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.xtc.originwidget,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.pocket.topbrowser,2518
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.vivo.tws.vivotws,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.dream.weather,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.theme.resources,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.storagemanager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.settings,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.cne,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.uim,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.gdhe.pyaf,6
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.jingdong.app.mall,-2155015
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.video.floating,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.wallet.appwidget,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.multinlp,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.deformer,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.networkstack.tethering.inprocess,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.fido.client,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.puresearch,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.base.agent,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.autonavi.minimap,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.location,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.taobao.idlefish,2337
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,ctrip.android.view,1455
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.cts.ctsshim,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.alibaba.android.rimet,611
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.wemeet.app,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.base.gallery,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qihoo.loan,151
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.devicepower,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.translator,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.uimGbaApp,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.scene.databaseprovider,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.dream.clock,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.diagservices,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.upslide,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.familycare.widget,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.game.card,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.vpndialogs,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.gallery,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.gamelib,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.car.networking,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.connbase.connectcenter,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.agent,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.email,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.hover,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.ndt.sidekey,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.zaxd.loan,21
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.gamespace,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.gametrain,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.gamewatch,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.share,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.space,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.notes,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.vhome,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.phone,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.shell,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.fingerprint,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.sdksandbox,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.wallpaperbackup,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.blockednumber,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.aiservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.widget.timemanager,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.userdictionary,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.media.module,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.t3go.passenger,2126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.emergency,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.minscreen,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.android.connectivity.mainline.common.resources.overlay,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.favorite,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.tencent.tmgp.pubgmhd,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.hotspot2.osulogin,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.xrcb,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.smile.gifmaker,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.systemui.navbar.gestural,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,ytbcvv22edasb.ytbczx2qwag,2518
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.location.fused,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.systemui,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,android.overlay.vivoresrro,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.bluetoothmidiservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.poweroffalarm,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.dr,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.amap.android.location,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.doubleinstance,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.ltebc,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.fingerprintui,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.systemblur.server,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.countdownwidget,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.permissioncontroller,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.SuperPowerSave,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.tam.tamserver,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.browser,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.traceur,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.taobao.taobao,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.ai.base.copilot,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.motionrecognition,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.chinamobile.mcloud,102
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.qti.qms.service.trustzoneaccess,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.yozo.vivo.office,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.voicerecognition,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qti.qcc,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.sosappwidget,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.duxiaoman.wallet,23
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.ondevicepersonalization.services,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.assistant,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.bluetooth,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.timeservice,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.juchao.shaizi,1780
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.qualcomm.atfwd,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.providers.contacts,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.netease.cloudmusic,3126
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivotouchscreen.synadeltadiff,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.ct.client,3134
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.healthwidget,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,tv.danmaku.bili,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.captiveportallogin,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bytedance.writer_assistant_flutter,439
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.internal.systemui.navbar.gestural_narrow_back,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.devicelockcontroller,475384
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.widget.gallery,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.eg.android.AlipayGphone,475050
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.ext.adservices.api,475384
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.cellbroadcastreceiver.overlay.common,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.defaultPlayer,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.chaozh.iReader,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bilibili.atomicwidget,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.livewallpaper.behaviormountain,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.lucky.luckyclient,3133
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.android.bbksoundrecorder,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.vivo.simplelauncher,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.bbk.account,133504
+
+2> 00df9f30-f0c3-4065-8cdb-cc92ae71deb8,AzL8n05jvRF-0,com.chaozh.iReader.widget,3133

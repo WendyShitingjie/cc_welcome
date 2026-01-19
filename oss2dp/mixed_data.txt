@@ -1,0 +1,22 @@
+timestamp,config_params,basic_info
+2025-03-14T03:22:56.413246Z,{
+  "version": "2.3.1",
+  "components": [
+    {
+      "name": "parser",
+      "settings": {
+        "encoding": "UTF-8",
+        "batch_size": 500
+      }
+    },
+    {
+      "name": "logger",
+      "levels": [
+        "INFO",
+        "WARN",
+        "ERROR"
+      ]
+    }
+  ]
+}
+, {"department": "devops", "env": "production"}
