@@ -1,7 +1,7 @@
 {
   "name": "test-table-generator",
   "displayName": "测试表生成器",
-  "description": "在测试环境中创建不同数据类型的测试表，支持 MySQL、TiDB、ADB 等 JDBC 数据库",
+  "description": "在测试环境中创建不同数据类型的测试表，支持 MySQL、TiDB、ADB 等 JDBC 数据库。支持从配置文件选择环境，或直接执行到数据库。",
   "command": "/test-table",
   "entrypoint": "index.py",
   "permissions": {
@@ -10,27 +10,54 @@
   },
   "args": [
     {
-      "name": "dbType",
-      "description": "数据库类型：mysql, tidb, adb",
-      "required": false,
-      "default": "mysql"
-    },
-    {
       "name": "tableName",
-      "description": "表名称",
+      "description": "表名称（必填）",
       "required": true
     },
     {
       "name": "dataType",
-      "description": "数据类型：string, number, date, boolean, mixed",
+      "description": "数据类型：string（字符串）、number（数值）、date（日期）、boolean（布尔）、mixed（混合，默认）",
       "required": false,
       "default": "mixed"
     },
     {
       "name": "rowCount",
-      "description": "生成的测试数据行数",
+      "description": "生成的测试数据行数（默认 10）",
       "required": false,
       "default": "10"
+    },
+    {
+      "name": "dbType",
+      "description": "数据库类型：mysql（默认）、tidb、adb",
+      "required": false,
+      "default": "mysql"
+    },
+    {
+      "name": "env",
+      "description": "使用预配置的环境名称（如：cjjcommon、tidb-ares、datagovernor）。使用 'list-envs' 查看所有环境",
+      "required": false
+    },
+    {
+      "name": "execute",
+      "description": "是否直接执行到数据库（true/false，默认 false 只显示 SQL）",
+      "required": false,
+      "default": "false"
+    },
+    {
+      "name": "output",
+      "description": "保存 SQL 到文件的路径（可选）",
+      "required": false
+    },
+    {
+      "name": "tableComment",
+      "description": "表注释说明（可选）",
+      "required": false
+    },
+    {
+      "name": "includeDrop",
+      "description": "是否包含 DROP TABLE 语句（true/false，默认 false）",
+      "required": false,
+      "default": "false"
     }
   ]
 }
