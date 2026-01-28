@@ -1,0 +1,36 @@
+{
+  "name": "test-table-generator",
+  "displayName": "测试表生成器",
+  "description": "在测试环境中创建不同数据类型的测试表，支持 MySQL、TiDB、ADB 等 JDBC 数据库",
+  "command": "/test-table",
+  "entrypoint": "index.py",
+  "permissions": {
+    "bash": true,
+    "filesystem": true
+  },
+  "args": [
+    {
+      "name": "dbType",
+      "description": "数据库类型：mysql, tidb, adb",
+      "required": false,
+      "default": "mysql"
+    },
+    {
+      "name": "tableName",
+      "description": "表名称",
+      "required": true
+    },
+    {
+      "name": "dataType",
+      "description": "数据类型：string, number, date, boolean, mixed",
+      "required": false,
+      "default": "mixed"
+    },
+    {
+      "name": "rowCount",
+      "description": "生成的测试数据行数",
+      "required": false,
+      "default": "10"
+    }
+  ]
+}
