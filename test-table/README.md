@@ -21,6 +21,51 @@
 | tidb-ares | TiDB | ares |
 | adb-realtime | ADB | stjtestadb |
 
+## 使用方式
+
+本工具提供两种使用方式，推荐使用斜杠命令方式，更加简单快捷。
+
+### 方式一：Claude Code 斜杠命令（推荐）
+
+在 Claude Code 中直接使用斜杠命令，通过自然语言描述即可创建测试表。
+
+**命令格式：**
+```
+/test-create-jdbctable [你的需求描述]
+```
+
+**使用示例：**
+
+1. **基本用法：**
+```
+/test-create-jdbctable 在cjjcommon环境创建testaa表，插入2条数据
+```
+
+2. **指定数据类型：**
+```
+/test-create-jdbctable 创建test_users表，50条mixed类型数据，执行到tidb-ares环境
+```
+
+3. **只生成SQL不执行：**
+```
+/test-create-jdbctable 生成test_orders表的SQL，100行数据
+```
+
+4. **自定义表结构：**
+```
+/test-create-jdbctable 在cjjloan环境创建订单表，包含日期字段，插入20条数据
+```
+
+**优势：**
+- ✅ 无需记忆命令参数
+- ✅ 自然语言描述需求
+- ✅ 自动识别表名、数据行数、环境等参数
+- ✅ 交互式确认，避免误操作
+
+### 方式二：直接运行 Python 脚本
+
+适合需要精确控制参数或集成到自动化脚本中的场景。
+
 ## 快速开始
 
 ### 1. 安装依赖
