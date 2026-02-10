@@ -2,6 +2,40 @@
 
 一个用于快速生成符合规范的测试表和测试数据的工具，支持 MySQL、TiDB、ADB 等多种数据库。
 
+## 快速安装
+
+### 方式一：使用 Git 克隆（推荐）
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/WendyShitingjie/cc_welcome.git
+
+# 2. 复制 skill 到 Claude Code 技能目录
+cp -r cc_welcome/test-table ~/.claude/skills/test-create-jdbctable
+
+# 3. 安装 Python 依赖
+pip install pymysql
+
+# 4. 完成！现在可以在 Claude Code 中使用 /test-create-jdbctable 命令
+```
+
+### 方式二：手动下载
+
+1. 访问 https://github.com/WendyShitingjie/cc_welcome
+2. 点击 "Code" -> "Download ZIP" 下载代码
+3. 解压后，将 `test-table` 文件夹复制到 `~/.claude/skills/` 目录
+4. 重命名为 `test-create-jdbctable`
+5. 安装依赖：`pip install pymysql`
+
+### 验证安装
+
+在 Claude Code 中输入：
+```
+/test-create-jdbctable
+```
+
+如果看到交互式问答界面，说明安装成功！
+
 ## 功能特性
 
 - 🚀 **快速生成**：一条命令即可创建测试表并插入数据
