@@ -128,6 +128,18 @@ class TestTableGenerator:
             ('updated_at', 'TIMESTAMP', 'NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP', '更新时间'),
             ('PRIMARY KEY', 'id', '', ''),
             ('KEY', 'idx_updated_at', 'updated_at', '')
+        ],
+        'composite_key': [
+            ('user_id', 'BIGINT UNSIGNED', 'NOT NULL', '用户ID'),
+            ('order_id', 'BIGINT UNSIGNED', 'NOT NULL', '订单ID'),
+            ('product_id', 'BIGINT UNSIGNED', 'NOT NULL', '商品ID'),
+            ('quantity', 'INT', 'NOT NULL DEFAULT 0', '数量'),
+            ('amount', 'DECIMAL(10,2)', 'NOT NULL DEFAULT 0.00', '金额'),
+            ('status', 'TINYINT', 'NOT NULL DEFAULT 0', '状态'),
+            ('created_at', 'TIMESTAMP', 'NOT NULL DEFAULT CURRENT_TIMESTAMP', '创建时间'),
+            ('updated_at', 'TIMESTAMP', 'NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP', '更新时间'),
+            ('PRIMARY KEY', 'user_id, order_id', '', ''),
+            ('KEY', 'idx_updated_at', 'updated_at', '')
         ]
     }
 
@@ -244,10 +256,10 @@ class TestTableGenerator:
                         'key3': random.choice([True, False])
                     }
                     row[col_name] = json.dumps(json_data, ensure_ascii=False)
+                elif 'BIGINT' in col_type:
+                    row[col_name] = random.randint(1000, 999999)
                 elif col_type == 'INT':
                     row[col_name] = random.randint(1, 100)
-                elif col_type == 'BIGINT':
-                    row[col_name] = random.randint(1000, 999999)
                 elif 'DECIMAL' in col_type:
                     # 解析 DECIMAL(M,D) 中的精度
                     import re
@@ -481,7 +493,7 @@ def main():
                        help='数据库类型 (默认: mysql)')
     generate_parser.add_argument('--tableName', required=True, help='表名称')
     generate_parser.add_argument('--dataType', default='mixed',
-                       choices=['string', 'number', 'date', 'boolean', 'mixed'],
+                       choices=['string', 'number', 'date', 'boolean', 'mixed', 'composite_key'],
                        help='数据类型 (默认: mixed)')
     generate_parser.add_argument('--rowCount', type=int, default=10, help='生成的测试数据行数 (默认: 10)')
     generate_parser.add_argument('--tableComment', default='', help='表注释 (可选)')
