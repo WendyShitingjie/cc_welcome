@@ -1,0 +1,82 @@
+# ============================================================================
+# 测试用例：JDBC 批量新增入仓任务 - 取消上传（校验失败场景 v3.0）
+# ============================================================================
+# 知识来源: TKF_002_JDBC 批量新增入仓任务_取消上传工作流.md, TKR_005
+# 生成方式: AI 基于 Test Knowledge Tree 自动化生成
+# 生成时间: 2026-03-01
+# ============================================================================
+
+test_case_id: TC_TKF002_002
+test_name: "JDBC批量新增入仓任务_取消上传_校验失败后取消"
+business_flow: TKF_002
+business_rules:
+  - TKR_005  # 批量上传任务取消及清理状态判断
+
+# 变量配置
+owner_config:
+  owner_id: "71e8b23d-45e2-497a-b247-f5b807fb4f65"
+  owner_name: "施婷杰"
+
+# 测试意图
+test_intent:
+  # ========== 前置条件：构造异常配置环境 ==========
+  preconditions:
+    - intent: "动作1：物理表创建"
+      primitive: TKP_001
+      params:
+        instruction: "创建不符合规范的测试表"
+        default_instance: "cjjcommon"
+        default_db: "dataops_shitingjie"
+
+    - intent: "动作2：元数据完善"
+      primitive: TKP_002
+      params:
+        instance_name: "${context.instance_name}"
+        db_name: "${context.db_name}"
+        tables: "${context.created_tables}"
+
+    - intent: "动作3：Excel 构造（注入错误实例名触发失败）"
+      primitive: TKP_003
+      params:
+        instance_name: "invalid_instance_error" # 故意注入不存在的实例名
+        db_name: "${context.db_name}"
+        tables: "${context.created_tables}"
+
+  # ========== 测试步骤 ==========
+  test_steps:
+    - intent: "步骤2：上传包含错误配置的文件"
+      primitive: batch_upload_validate
+      params:
+        fileName: "batch_test_error.xlsx"
+
+    - intent: "步骤3：查询并确认校验结果为失败"
+      primitive: query_batch_result
+      params:
+        taskId: "${context.taskId}"
+      assertions:
+        - intent: "物理验证：任务主表状态应为 VALIDATE_FAILED"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            field: "task_status"
+            where: "id = ${context.taskId}"
+            expected: "VALIDATE_FAILED"
+            wait: 2
+
+    - intent: "步骤4：取消该失效的任务"
+      primitive: cancel_batch_task
+      params:
+        taskId: "${context.taskId}"
+      assertions:
+        - intent: "验证符合 [TKR_005] 失效的任务记录被清理"
+          primitive: assert_record_count
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            where: "id = ${context.taskId} AND is_deleted = 0"
+            expected: 0
+
+expected_result:
+  description: |
+    1. 构造异常 Excel 导致校验失败。
+    2. 确认数据库状态为 VALIDATE_FAILED。
+    3. 取消任务后，验证数据库记录已正确注销/清理。

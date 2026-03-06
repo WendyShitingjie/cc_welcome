@@ -140,6 +140,12 @@ source pythonProject/venv/bin/activate
 
 路径：`/Users/wendy/PycharmProjects/ClaudeCode的脚本/`
 
+
+## 省token技巧
+- 不要让 AI 每次都吐出完整代码。当已经有了一份基础代码后如果要修改代码，只给我看修改部分的代码，或者受影响的函数。不要重新生成整个文件。
+- 除非我要求，否则不要解释代码原理
+- 不要输出鼓励性的话语（如‘好的，我很乐意为您服务’）
+
 ## 注意事项
 
 1. 数据库密码和敏感信息已在代码中明文存储,仅用于测试环境
@@ -147,3 +153,4 @@ source pythonProject/venv/bin/activate
 3. 大部分脚本需要根据实际测试场景修改参数后运行
 4. 数据生成脚本使用随机数据,包含完整的字段逻辑关联处理
 5. API 测试脚本包含环境特定的 URL 和 token 配置
+

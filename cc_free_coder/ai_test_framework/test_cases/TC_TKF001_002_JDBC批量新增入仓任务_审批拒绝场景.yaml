@@ -1,0 +1,127 @@
+# ============================================================================
+# 测试用例：JDBC 批量新增入仓任务 - 审批拒绝场景 (环境自适应版 v3.0)
+# ============================================================================
+# 知识来源:
+#   - FLOW: TKF_001_JDBC 批量新增入仓任务_全链路工作流.md
+#   - RULES: TKR_001, TKR_002, TKR_006
+# 生成方式: AI 基于 Test Knowledge Tree 自动化生成
+# 生成时间: 2026-03-01
+# ============================================================================
+
+test_case_id: TC_TKF001_002
+test_name: "JDBC批量新增入仓任务_审批拒绝_状态一致性验证"
+business_flow: TKF_001
+business_rules:
+  - TKR_001  # 批量入仓_新增任务_校验成功判断
+  - TKR_002  # 批量入仓_新增任务_提交状态判断
+  - TKR_006  # 批量入仓_新增任务_审批拒绝规则
+
+# 变量配置
+owner_config:
+  owner_id: "71e8b23d-45e2-497a-b247-f5b807fb4f65"
+  owner_name: "施婷杰"
+
+# 关联的知识文档
+related_knowledge:
+  flows: [TKF_001]
+  rules: [TKR_001, TKR_002, TKR_006]
+  data_components: [TKD_001, TKD_010]
+
+# 测试意图
+test_intent:
+  # ========== 前置条件：环境初始化（支持自适应数据库/实例） ==========
+  preconditions:
+    - intent: "动作1：物理表创建"
+      primitive: TKP_001
+      params:
+        # 指令逻辑：若未提及则默认 cjjcommon/dataops_shitingjie；若指明则覆盖默认值
+        instruction: "在 cjjcommon 实例的 dataops_shitingjie 库下创建测试表"
+        default_instance: "cjjcommon"
+        default_db: "dataops_shitingjie"
+
+    - intent: "动作2：元数据完善"
+      primitive: TKP_002
+      params:
+        # 动态引用：与动作 1 实际使用的库/实例保持闭环
+        instance_name: "${context.instance_name}"
+        db_name: "${context.db_name}"
+        tables: "${context.created_tables}"
+
+    - intent: "动作3：Excel 文件构造"
+      primitive: TKP_003
+      params:
+        instance_name: "${context.instance_name}"
+        db_name: "${context.db_name}"
+        tables: "${context.created_tables}"
+
+  # ========== 测试步骤：执行业务流至审批环节 ==========
+  test_steps:
+    # [步骤2] 批量上传校验
+    - intent: "步骤2：批量上传校验"
+      primitive: batch_upload_validate
+      params:
+        fileName: "batch_test_latest.xlsx"
+
+    # [步骤3] 查询并确认校验结果 [TKR_001]
+    - intent: "步骤3：查询并确认校验结果"
+      primitive: query_batch_result
+      params:
+        taskId: "${context.taskId}"
+      assertions:
+        - intent: "物理验证：任务主表状态为 VALIDATE_SUCCESS"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            field: "task_status"
+            where: "id = ${context.taskId}"
+            expected: "VALIDATE_SUCCESS"
+            wait: 2
+
+    # [步骤4] 提交批量操作任务 [TKR_002]
+    - intent: "步骤4：提交批量操作任务"
+      primitive: submit_batch_task
+      params:
+        taskId: "${context.taskId}"
+      assertions:
+        - intent: "验证符合 [TKR_002] 状态切换为 PENDING_APPROVAL"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            field: "task_status"
+            where: "id = ${context.taskId}"
+            expected: "PENDING_APPROVAL"
+
+    # [步骤5] 发送审批信号 (模拟拒绝意图)
+    - intent: "步骤5：发送审批拒绝信号"
+      primitive: TKP_004
+      params:
+        taskId: "${context.taskId}"
+        # 指令驱动：Skill 识别“拒绝”自动发送 STATUS_REJECTED
+        instruction: "taskid=${context.taskId}发送审批拒绝的mq消息"
+
+    # [步骤6] 结果验证：根据 [TKR_006] 验证状态一致性
+    - intent: "步骤6：验证审批拒绝后的双表状态符合 [TKR_006]"
+      assertions:
+        - intent: "验证作业任务状态同步更新为 APPROVING_FAIL"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            field: "task_status"
+            where: "id='${context.taskId}'"
+            expected: "APPROVING_FAIL"
+            timeout: 10
+
+        - intent: "验证 BPM 记录状态同步更新为 3 (已拒绝)"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_bpm_record"
+            field: "status"
+            where: "process_instance_node_id='${context.taskId}' AND process_key='bg_jdbc_rc_plxz_rw'"
+            expected: "3"
+
+expected_result:
+  description: |
+    1. 根据指令动态准备环境，完成任务提交。
+    2. 模拟发送审批拒绝信号后，作业主表 [TKD_001] 状态更新为 APPROVING_FAIL。
+    3. 审批流水表 [TKD_010] 状态同步变更为 3 (已拒绝)。
+    4. 满足 TKR_006 状态一致性校验逻辑，流程成功中断。

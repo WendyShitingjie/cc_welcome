@@ -13,6 +13,11 @@ import configparser
 from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional
 
+try:
+    from generate_invalid_comment_tables import InvalidCommentTableGenerator
+except ImportError:
+    InvalidCommentTableGenerator = None
+
 
 class TestTableGenerator:
     """测试表生成器类"""
@@ -127,6 +132,18 @@ class TestTableGenerator:
             ('created_at', 'TIMESTAMP', 'NOT NULL DEFAULT CURRENT_TIMESTAMP', '创建时间'),
             ('updated_at', 'TIMESTAMP', 'NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP', '更新时间'),
             ('PRIMARY KEY', 'id', '', ''),
+            ('KEY', 'idx_updated_at', 'updated_at', '')
+        ],
+        'composite_key': [
+            ('user_id', 'BIGINT UNSIGNED', 'NOT NULL', '用户ID'),
+            ('order_id', 'BIGINT UNSIGNED', 'NOT NULL', '订单ID'),
+            ('product_id', 'BIGINT UNSIGNED', 'NOT NULL', '商品ID'),
+            ('quantity', 'INT', 'NOT NULL DEFAULT 0', '数量'),
+            ('amount', 'DECIMAL(10,2)', 'NOT NULL DEFAULT 0.00', '金额'),
+            ('status', 'TINYINT', 'NOT NULL DEFAULT 0', '状态'),
+            ('created_at', 'TIMESTAMP', 'NOT NULL DEFAULT CURRENT_TIMESTAMP', '创建时间'),
+            ('updated_at', 'TIMESTAMP', 'NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP', '更新时间'),
+            ('PRIMARY KEY', 'user_id, order_id', '', ''),
             ('KEY', 'idx_updated_at', 'updated_at', '')
         ]
     }
@@ -244,10 +261,10 @@ class TestTableGenerator:
                         'key3': random.choice([True, False])
                     }
                     row[col_name] = json.dumps(json_data, ensure_ascii=False)
+                elif 'BIGINT' in col_type:
+                    row[col_name] = random.randint(1000, 999999)
                 elif col_type == 'INT':
                     row[col_name] = random.randint(1, 100)
-                elif col_type == 'BIGINT':
-                    row[col_name] = random.randint(1000, 999999)
                 elif 'DECIMAL' in col_type:
                     # 解析 DECIMAL(M,D) 中的精度
                     import re
@@ -475,13 +492,26 @@ def main():
     # 列出环境命令
     list_parser = subparsers.add_parser('list-envs', help='列出所有预配置的测试环境')
 
+    # 复制表命令
+    copy_parser = subparsers.add_parser('copy-table', help='复制表结构')
+    copy_parser.add_argument('--sourceTable', required=True, help='源表名称')
+    copy_parser.add_argument('--targetTable', required=False, help='目标表名称（可选，如不提供将自动生成：源表名_MMDD_序号）')
+    copy_parser.add_argument('--env', help='使用预配置的测试环境')
+    copy_parser.add_argument('--copyData', action='store_true', help='同时复制数据')
+    copy_parser.add_argument('--showDDL', action='store_true', help='显示表 DDL')
+    copy_parser.add_argument('--host', help='数据库主机')
+    copy_parser.add_argument('--port', type=int, help='数据库端口')
+    copy_parser.add_argument('--database', help='数据库名称')
+    copy_parser.add_argument('--username', help='用户名')
+    copy_parser.add_argument('--password', default='', help='密码')
+
     # 生成表命令
     generate_parser = subparsers.add_parser('generate', help='生成测试表 SQL')
     generate_parser.add_argument('--dbType', default='mysql', choices=['mysql', 'tidb', 'adb'],
                        help='数据库类型 (默认: mysql)')
     generate_parser.add_argument('--tableName', required=True, help='表名称')
     generate_parser.add_argument('--dataType', default='mixed',
-                       choices=['string', 'number', 'date', 'boolean', 'mixed'],
+                       choices=['string', 'number', 'date', 'boolean', 'mixed', 'composite_key'],
                        help='数据类型 (默认: mixed)')
     generate_parser.add_argument('--rowCount', type=int, default=10, help='生成的测试数据行数 (默认: 10)')
     generate_parser.add_argument('--tableComment', default='', help='表注释 (可选)')
@@ -495,6 +525,9 @@ def main():
     generate_parser.add_argument('--database', help='数据库名称')
     generate_parser.add_argument('--username', help='用户名')
     generate_parser.add_argument('--password', default='', help='密码')
+    generate_parser.add_argument('--invalidScenario',
+                       choices=['table_no_chinese', 'table_short', 'field_no_chinese', 'field_short'],
+                       help='异常场景类型（用于生成违反规范的测试表）')
 
     # 兼容旧版本：如果没有子命令，默认为 generate
     args, unknown = parser.parse_known_args()
@@ -518,29 +551,178 @@ def main():
         print(f"\n{'='*80}\n")
         return
 
+    # 复制表
+    if args.command == 'copy-table':
+        try:
+            import pymysql
+        except ImportError:
+            print("\n✗ 需要安装 pymysql 库: pip install pymysql\n")
+            sys.exit(1)
+
+        # 获取数据库连接信息
+        if args.env:
+            if args.env not in TestTableGenerator.TEST_ENVIRONMENTS:
+                print(f"\n✗ 未找到环境配置: {args.env}")
+                print(f"可用环境: {list(TestTableGenerator.TEST_ENVIRONMENTS.keys())}\n")
+                sys.exit(1)
+            env = TestTableGenerator.TEST_ENVIRONMENTS[args.env]
+            host = env['host']
+            port = env['port']
+            database = env['database']
+            username = env['username']
+            password = env['password']
+        else:
+            if not all([args.host, args.database, args.username]):
+                print("\n✗ 必须提供 --env 或 (--host, --database, --username) 参数\n")
+                sys.exit(1)
+            host = args.host
+            port = args.port or 3306
+            database = args.database
+            username = args.username
+            password = args.password
+
+        try:
+            # 连接数据库（需要先连接才能检查表是否存在）
+            connection = pymysql.connect(
+                host=host,
+                port=port,
+                user=username,
+                password=password or '',
+                database=database,
+                charset='utf8mb4'
+            )
+            cursor = connection.cursor()
+
+            # 如果没有提供目标表名，自动生成
+            target_table = args.targetTable
+            if not target_table:
+                from datetime import datetime
+                date_suffix = datetime.now().strftime('%m%d')
+                base_target = f"{args.sourceTable}_{date_suffix}"
+
+                # 检查是否已存在同名表
+                cursor.execute(f"SHOW TABLES LIKE '{base_target}'")
+                if cursor.fetchone():
+                    # 已存在，添加序号后缀
+                    seq = 1
+                    while True:
+                        target_table = f"{base_target}_{seq:02d}"
+                        cursor.execute(f"SHOW TABLES LIKE '{target_table}'")
+                        if not cursor.fetchone():
+                            break
+                        seq += 1
+                else:
+                    target_table = base_target
+
+                print(f"✓ 自动生成目标表名: {target_table}")
+
+            print(f"\n{'='*60}")
+            print(f"复制表结构")
+            print(f"{'='*60}")
+            print(f"源表: {args.sourceTable}")
+            print(f"目标表: {target_table}")
+            print(f"主机: {host}")
+            print(f"数据库: {database}")
+            print(f"{'='*60}\n")
+
+            # 获取源表的 DDL
+            cursor.execute(f"SHOW CREATE TABLE {args.sourceTable}")
+            result = cursor.fetchone()
+            if not result:
+                print(f"\n✗ 未找到表: {args.sourceTable}\n")
+                sys.exit(1)
+
+            create_ddl = result[1]
+
+            # 替换表名（支持不同的大小写格式）
+            import re
+            # 匹配 CREATE TABLE 或 Create Table 等各种大小写组合
+            pattern = re.compile(
+                rf"(CREATE\s+TABLE|Create\s+Table)\s+`{re.escape(args.sourceTable)}`",
+                re.IGNORECASE
+            )
+            new_ddl = pattern.sub(rf"\1 `{target_table}`", create_ddl, count=1)
+
+            if args.showDDL:
+                print("源表 DDL:")
+                print("-" * 60)
+                print(create_ddl)
+                print("-" * 60)
+                print("\n新表 DDL:")
+                print("-" * 60)
+                print(new_ddl)
+                print("-" * 60)
+                print()
+
+            # 执行建表语句
+            cursor.execute(new_ddl)
+            connection.commit()
+            print(f"✓ 表结构复制成功: {target_table}")
+
+            # 如果需要复制数据
+            if args.copyData:
+                print(f"\n正在复制数据...")
+                cursor.execute(f"INSERT INTO {target_table} SELECT * FROM {args.sourceTable}")
+                connection.commit()
+                affected_rows = cursor.rowcount
+                print(f"✓ 数据复制成功: {affected_rows} 行")
+
+            cursor.close()
+            connection.close()
+
+            print("\n✓ 完成！\n")
+
+        except Exception as e:
+            print(f"\n✗ 错误: {str(e)}\n")
+            import traceback
+            traceback.print_exc()
+            sys.exit(1)
+        return
+
     # 生成表
     if args.command == 'generate':
         try:
-            generator = TestTableGenerator(db_type=args.dbType)
+            # 处理异常场景
+            if hasattr(args, 'invalidScenario') and args.invalidScenario:
+                if InvalidCommentTableGenerator is None:
+                    print("\n✗ 错误: 无法导入异常场景生成器\n")
+                    sys.exit(1)
 
-            print(f"\n{'='*60}")
-            print(f"测试表生成器 (符合 MySQL 建表规范)")
-            print(f"{'='*60}")
-            print(f"数据库类型: {args.dbType.upper()}")
-            print(f"表名: {args.tableName}")
-            print(f"数据类型: {args.dataType}")
-            print(f"数据行数: {args.rowCount}")
-            if args.env:
-                print(f"目标环境: {args.env}")
-            print(f"{'='*60}\n")
+                print(f"\n{'='*60}")
+                print(f"异常场景测试表生成器")
+                print(f"{'='*60}")
+                print(f"表名: {args.tableName}")
+                print(f"异常场景: {args.invalidScenario}")
+                print(f"数据行数: {args.rowCount}")
+                if args.env:
+                    print(f"目标环境: {args.env}")
+                print(f"{'='*60}\n")
 
-            sql_script = generator.generate_full_script(
-                table_name=args.tableName,
-                data_type=args.dataType,
-                row_count=args.rowCount,
-                include_drop=args.includeDrop,
-                table_comment=args.tableComment
-            )
+                create_sql = InvalidCommentTableGenerator.generate_create_table_sql(args.tableName, args.invalidScenario)
+                insert_sqls = InvalidCommentTableGenerator.generate_insert_sql(args.tableName, args.rowCount)
+                sql_script = create_sql + "\n" + "\n".join(insert_sqls)
+            else:
+                # 正常场景
+                generator = TestTableGenerator(db_type=args.dbType)
+
+                print(f"\n{'='*60}")
+                print(f"测试表生成器 (符合 MySQL 建表规范)")
+                print(f"{'='*60}")
+                print(f"数据库类型: {args.dbType.upper()}")
+                print(f"表名: {args.tableName}")
+                print(f"数据类型: {args.dataType}")
+                print(f"数据行数: {args.rowCount}")
+                if args.env:
+                    print(f"目标环境: {args.env}")
+                print(f"{'='*60}\n")
+
+                sql_script = generator.generate_full_script(
+                    table_name=args.tableName,
+                    data_type=args.dataType,
+                    row_count=args.rowCount,
+                    include_drop=args.includeDrop,
+                    table_comment=args.tableComment
+                )
 
             # 保存到文件
             if args.output:
@@ -551,20 +733,24 @@ def main():
             # 执行到数据库
             if args.execute:
                 print("正在执行 SQL 到数据库...")
-                result = generator.execute_sql(
-                    sql_script=sql_script,
-                    env_name=args.env,
-                    host=args.host,
-                    port=args.port,
-                    database=args.database,
-                    username=args.username,
-                    password=args.password
-                )
+                if hasattr(args, 'invalidScenario') and args.invalidScenario:
+                    result = InvalidCommentTableGenerator.execute_sql(args.env, sql_script)
+                else:
+                    result = generator.execute_sql(
+                        sql_script=sql_script,
+                        env_name=args.env,
+                        host=args.host,
+                        port=args.port,
+                        database=args.database,
+                        username=args.username,
+                        password=args.password
+                    )
 
                 if result['success']:
                     print(f"✓ {result['message']}")
-                    print(f"  主机: {result['host']}")
-                    print(f"  数据库: {result['database']}")
+                    if 'host' in result:
+                        print(f"  主机: {result['host']}")
+                        print(f"  数据库: {result['database']}")
                 else:
                     print(f"✗ 执行失败: {result['error']}")
                     if 'host' in result:

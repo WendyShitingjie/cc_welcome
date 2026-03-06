@@ -1,0 +1,94 @@
+# ============================================================================
+# 测试用例：JDBC 批量新增入仓任务 - 取消上传（校验成功场景 v3.0）
+# ============================================================================
+# 知识来源: TKF_002_JDBC 批量新增入仓任务_取消上传工作流.md, TKR_005
+# 生成方式: AI 基于 Test Knowledge Tree 自动化生成
+# 生成时间: 2026-03-01
+# ============================================================================
+
+test_case_id: TC_TKF002_001
+test_name: "JDBC批量新增入仓任务_取消上传_校验成功后取消"
+business_flow: TKF_002
+business_rules:
+  - TKR_001  # 批量入仓_新增任务_校验成功判断
+  - TKR_005  # 批量上传任务取消及清理状态判断
+
+# 变量配置
+owner_config:
+  owner_id: "71e8b23d-45e2-497a-b247-f5b807fb4f65"
+  owner_name: "施婷杰"
+
+# 关联的知识文档
+related_knowledge:
+  flows: [TKF_002]
+  rules: [TKR_001, TKR_005]
+  data_components: [TKD_001]
+  integration_components: [TKI_003, TKI_004, TKI_006]
+
+# 测试意图
+test_intent:
+  # ========== 前置条件：环境初始化（支持自适应数据库/实例） ==========
+  preconditions:
+    - intent: "动作1：物理表创建"
+      primitive: TKP_001
+      params:
+        # 指令逻辑：若指令未提及库/实例，则默认使用 cjjcommon/dataops_shitingjie
+        instruction: "在 cjjcommon 实例的 dataops_shitingjie 库下创建测试表"
+        default_instance: "cjjcommon"
+        default_db: "dataops_shitingjie"
+
+    - intent: "动作2：元数据完善"
+      primitive: TKP_002
+      params:
+        instance_name: "${context.instance_name}"
+        db_name: "${context.db_name}"
+        tables: "${context.created_tables}"
+
+    - intent: "动作3：Excel 文件构造"
+      primitive: TKP_003
+      params:
+        instance_name: "${context.instance_name}"
+        db_name: "${context.db_name}"
+        tables: "${context.created_tables}"
+
+  # ========== 测试步骤：执行业务流 ==========
+  test_steps:
+    # [步骤2] 批量上传校验
+    - intent: "步骤2：调用 TKI_003 批量上传校验接口"
+      primitive: batch_upload_validate
+      params:
+        fileName: "batch_test_latest.xlsx"
+
+    # [步骤3] 查询并确认校验结果
+    - intent: "步骤3：验证任务校验状态为成功 [TKR_001]"
+      primitive: query_batch_result
+      params:
+        taskId: "${context.taskId}"
+      assertions:
+        - intent: "物理验证：任务主表状态必须为 VALIDATE_SUCCESS"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            field: "task_status"
+            where: "id = ${context.taskId}"
+            expected: "VALIDATE_SUCCESS"
+            wait: 2
+
+    # [步骤4] 取消上传
+    - intent: "步骤4：调用 TKI_006 取消上传任务"
+      primitive: cancel_batch_task
+      params:
+        taskId: "${context.taskId}"
+      assertions:
+        - intent: "验证符合 [TKR_005] 任务记录被物理删除或逻辑注销"
+          primitive: assert_record_count
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            where: "id = ${context.taskId} AND is_deleted = 0"
+            expected: 0
+
+expected_result:
+  description: |
+    1. 根据指令动态准备环境。
+    2. 任务上传后数据库确认校验状态为成功。
+    3. 执行取消操作后，数据库验证活跃记录已清理，符合 TKR_005 规则。

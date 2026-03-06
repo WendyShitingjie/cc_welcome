@@ -1,0 +1,134 @@
+# ============================================================================
+# 测试用例：JDBC 批量新增入仓任务 - 全链路成功场景 (最终优选版 v3.0)
+# ============================================================================
+# 知识来源: TKF_001, TKR_001, TKR_002, TKR_004, TKR_007
+# 生成方式: AI 基于 Test Knowledge Tree 自动化生成
+# 生成时间: 2026-03-01
+# ============================================================================
+
+test_case_id: TC_TKF001_001
+test_name: "JDBC批量新增入仓任务_全链路成功_环境自适应版"
+business_flow: TKF_001
+business_rules:
+  - TKR_001, TKR_002, TKR_004, TKR_007
+
+# 变量配置
+owner_config:
+  owner_id: "71e8b23d-45e2-497a-b247-f5b807fb4f65"
+  owner_name: "施婷杰"
+
+# 测试意图
+test_intent:
+  # ========== 前置条件：环境初始化（支持自适应数据库/实例） ==========
+  preconditions:
+    - intent: "动作1：物理表创建"
+      primitive: TKP_001
+      params:
+        # 指令逻辑：若指令未提及库/实例，则 Skill 默认使用 cjjcommon/dataops_shitingjie
+        instruction: "在 cjjcommon 实例的 dataops_shitingjie 库下创建 2 张测试表"
+        default_instance: "cjjcommon"
+        default_db: "dataops_shitingjie"
+
+    - intent: "动作2：元数据完善"
+      primitive: TKP_002
+      params:
+        # 动态引用：确保与动作 1 使用的库保持严格一致
+        instance_name: "${context.instance_name}"
+        db_name: "${context.db_name}"
+        tables: "${context.created_tables}"
+
+    - intent: "动作3：Excel 文件构造"
+      primitive: TKP_003
+      params:
+        instance_name: "${context.instance_name}"
+        db_name: "${context.db_name}"
+        tables: "${context.created_tables}"
+        output_file: "batch_test_latest.xlsx"
+
+  # ========== 测试步骤：业务流执行 ==========
+  test_steps:
+    - intent: "步骤2：批量上传校验"
+      primitive: batch_upload_validate
+      params:
+        fileName: "batch_test_latest.xlsx"
+
+    - intent: "步骤3：确认校验结果 [TKR_001]"
+      primitive: query_batch_result
+      params:
+        taskId: "${context.taskId}"
+      assertions:
+        - intent: "物理验证：任务主表状态为成功"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            field: "task_status"
+            where: "id = ${context.taskId}"
+            expected: "VALIDATE_SUCCESS"
+
+    - intent: "步骤4：提交批量操作任务 [TKR_002]"
+      primitive: submit_batch_task
+      params:
+        taskId: "${context.taskId}"
+      assertions:
+        - intent: "验证状态切换为 PENDING_APPROVAL"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_batch_operation_task"
+            field: "task_status"
+            where: "id = ${context.taskId}"
+            expected: "PENDING_APPROVAL"
+
+    - intent: "步骤5：发送审批通过信号"
+      primitive: TKP_004
+      params:
+        taskId: "${context.taskId}"
+        instruction: "taskid=${context.taskId}发送审批通过的mq消息"
+
+    # [步骤6] 结果验证 (自适应数据库路径)
+    - intent: "步骤6.1：验证 BPM 联动符合 [TKR_004]"
+      wait: 10  # 👈 在这里增加等待，引擎会自动识别并在验证前sleep
+      assertions:
+        - intent: "验证 BPM 记录状态为 4"
+          primitive: assert_field_equals
+          params:
+            table: "dataops.dataops_bpm_record"
+            field: "status"
+            where: "process_instance_node_id='${context.taskId}' and process_key='bg_jdbc_rc_plxz_rw'"
+            expected: 4
+
+
+    # [步骤6] 结果验证（基于 TKR_007 完整关联逻辑）
+    - intent: "步骤6.2: 结果全链路验证符合 [TKR_007]"
+      wait: 300  # ⭐ 核心改进：执行前先硬等 5 分钟，符合业务发布耗时预期
+      primitive: assert_database_record
+      params:
+        # 1. 完整的多表关联逻辑（对应 TKR_007 关联图谱）
+        table: >
+          dataops.dataops_extract_input_datasource_config_info ds
+          INNER JOIN dataops.dataops_extract_node_config_info node ON ds.id = node.extract_input_datasource_config_id
+          INNER JOIN dataops.dataops_task_schedule_config_info sch ON node.extract_schedule_config_id = sch.id
+          LEFT JOIN dataops.dataops_process_instance_info pi ON node.id = pi.process_business_id
+
+        # 2. 精准过滤：使用上下文中的动态参数
+        where: >
+          ds.table_name = '${context.created_tables[0]}' 
+          AND ds.instance_name = '${context.instance_name}' 
+          AND ds.db_name = '${context.db_name}'
+          AND ds.status = 0
+
+        # 3. 轮询缓冲：在硬等 5 分钟后，再给 120 秒进行状态拾取
+        wait: 30
+
+        # 4. 关键业务字段校验
+        assertions:
+          - field: "pi.status"
+            expected: 0  # 最终发布成功标志
+
+
+
+expected_result:
+  description: |
+    1. 根据指令动态准备环境（默认或指定库）。
+    2. 任务状态从 VALIDATE_SUCCESS 流转至 PENDING_APPROVAL。
+    3. 模拟审批通过后，BPM 状态更新，作业状态进入发布阶段。
+    4. 目标数据库中的配置记录完整生成，符合全链路落库规则。
